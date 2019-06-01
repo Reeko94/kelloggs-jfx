@@ -50,7 +50,7 @@ public class NewArticleView {
             @Override
             public void handle(ActionEvent event) {
                 FileChooser fc = new FileChooser();
-                fc.setInitialDirectory(new File ("/Users/theosikli/Desktop"));
+                fc.setInitialDirectory(new File ("C:\\Users\\louis\\Desktop\\articles"));
                 fc.getExtensionFilters().addAll(
                         new FileChooser.ExtensionFilter("Images","*.jpg","*.jpeg","*.png")
                 );
@@ -69,7 +69,8 @@ public class NewArticleView {
                         {"false","false","true","false","false","false","true"}
                 };
                 Main.insertArticle(fieldVialue);
-                Main.uploadFile(selectedFile.getAbsolutePath(),"/var/www/html/website/public/uploads/article");
+                Main.uploadFile(selectedFile.getAbsolutePath(),"/var/www/html/kelloggs/public/uploads/article");
+                Main.gotoDashboard(gridPane);
             }
         });
 

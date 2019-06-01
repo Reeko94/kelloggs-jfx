@@ -72,6 +72,7 @@ public class Main extends Application {
     public static boolean insertArticle(String[][] fieldValues) {
         String query = BDD.getQueryInsertTable("articles",fieldValues);
         String nameArticle = fieldValues[1][2];
+        System.out.println(getIdTypeNutrition(nameArticle));
         if(getIdArticle(nameArticle) != 0) {
             return false;
         }

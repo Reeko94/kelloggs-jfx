@@ -47,7 +47,7 @@ public class NewFabricantView {
             @Override
             public void handle(ActionEvent event) {
             	FileChooser fc = new FileChooser();
-            	fc.setInitialDirectory(new File ("/Users/theosikli/Desktop"));
+            	fc.setInitialDirectory(new File ("C:\\Users\\louis\\Desktop\\fabricants"));
             	fc.getExtensionFilters().addAll(
                         new ExtensionFilter("Images","*.jpg","*.jpeg","*.png")
                 );
